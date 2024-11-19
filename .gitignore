@@ -7,12 +7,13 @@
 # except for these files 
 !.gitignore
 
-
+# bash
 !.bash_profile
 !.bashrc
 !.bash_history
 !.bash_aliases
 
+# config
 !.config/
 .config/*
 !.config/nvim
