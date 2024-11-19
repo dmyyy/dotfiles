@@ -1,12 +1,19 @@
-# ignore everything 
-*
+# ignore all files/folders in root 
+/*
+
+**/.DS_Store
+**.log
 
 # except for these files 
 !.gitignore
+
+
 !.bash_profile
 !.bashrc
 !.bash_history
 !.bash_aliases
 
-!.config/nvim/*
-!.config/wezterm/*
+!.config/
+.config/*
+!.config/nvim
+!.config/wezterm
