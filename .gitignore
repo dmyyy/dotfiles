@@ -1,0 +1,12 @@
+# ignore everything 
+*
+
+# except for these files 
+!.gitignore
+!.bash_profile
+!.bashrc
+!.bash_history
+!.bash_aliases
+
+!.config/nvim
+!.config/wezterm
