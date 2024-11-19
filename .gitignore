@@ -6,6 +6,7 @@
 
 # except for these files 
 !.gitignore
+!.gitconfig
 
 # bash
 !.bash_profile
