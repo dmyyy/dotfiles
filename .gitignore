@@ -1,0 +1,34 @@
+# ignore all files/folders in root 
+/*
+
+**/.DS_Store
+**.log
+
+# except for these files 
+!.gitignore
+!.gitconfig
+!README.md
+
+# bash
+!.bash_profile
+!.bashrc
+!.bash_history
+!.bash_aliases
+
+# config
+!.config/
+.config/*
+!.config/nvim
+!.config/wezterm
+!.config/fish
+
+# fonts
+!.fonts/
+
+# rust
+!rust/
+rust/*
+!rust/.cargo
+
+# keyd
+!/etc/keyd/default.conf
