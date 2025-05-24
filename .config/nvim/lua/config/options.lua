@@ -14,10 +14,10 @@ vim.opt.scrolloff = 20
 vim.opt.iskeyword:remove("_")
 
 -- 4 space tabs
-vim.opt.tabstop = 4
-vim.opt.expandtab = true
-vim.o.softtabstop = 4
-vim.o.shiftwidth = 4
+-- vim.opt.tabstop = 4
+-- vim.opt.expandtab = true
+-- vim.o.softtabstop = 4
+-- vim.o.shiftwidth = 4
 
 vim.opt.textwidth = 100
 
