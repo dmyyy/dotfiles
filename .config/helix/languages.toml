@@ -1,0 +1,62 @@
+[language-server.scls]
+command = "simple-completion-language-server"
+
+[language-server.scls.config]
+max_completion_items = 100           # set max completion results len for each group: words, snippets, unicode-input
+feature_words = true                 # enable completion by word
+feature_snippets = true              # enable snippets
+snippets_first = false                # completions will return before snippets by default
+snippets_inline_by_word_tail = false # suggest snippets by WORD tail, for example text `xsq|` become `x^2|` when snippet `sq` has body `^2`
+feature_unicode_input = false        # enable "unicode input"
+feature_paths = false                # enable path completion
+feature_citations = false            # enable citation completion (only on `citation` feature enabled)
+
+[language-server.scls.environment]
+RUST_LOG = "info,simple-completion-language-server=info"
+LOG_FILE = "/tmp/completion.log"
+
+
+# [language-server.hx-lsp]
+# command = "hx-lsp"
+
+# rust
+[language-server.rust-analyzer.config]
+cargo = { features = "all" }
+check = { command = "clippy" }
+
+[[language]]
+name = "rust"
+auto-format = true
+language-servers = [ "scls", "rust-analyzer" ]
+
+# auto-pair <> and || since I use them for generics/closures often
+[language.auto-pairs]
+'(' = ')'
+'[' = ']'
+'{' = '}'
+'"' = '"'
+'`' = '`'
+'<' = '>'
+'|' = '|'
+
+# json
+[language-server.vscode-json-language-server]
+config = { "provideFormatter" = true, "json" = { "keepLines" = { "enable" = true } } }
+
+[[language]]
+name = "json"
+language-servers = [ "scls", "vscode-json-language-server" ]
+
+
+# [[language]]
+# name = "git-commit"
+# language-servers = [ "scls" ]
+
+[[language]]
+name = "markdown"
+language-servers = [ "marksman" ]
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}
+auto-format = true
+soft-wrap.enable = true
+soft-wrap.wrap-at-text-width = true
+

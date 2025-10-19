@@ -1,0 +1,4 @@
+ls
+cl
+fish
+fish

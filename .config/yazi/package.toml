@@ -1,0 +1,29 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+rev = "de53d90"
+hash = "3996fc74044bc44144b323686f887e1"
+
+[[flavor.deps]]
+use = "dangooddd/kanagawa"
+rev = "31167ed"
+hash = "a04e157148549bacbb2831aab0e6e8cb"
+
+[[flavor.deps]]
+use = "gosxrgxx/flexoki-light"
+rev = "45eb0a0"
+hash = "1ee212b0799497b54c7e60bac8931e4e"
+
+[[flavor.deps]]
+use = "muratoffalex/kanagawa-lotus"
+rev = "d84d61a"
+hash = "eef7cfa41fe51c19628d28cf453e967d"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:dracula"
+rev = "9cd2ac4"
+hash = "c0bfefbff165007a76c0933ed0432e3f"
+
+[[flavor.deps]]
+use = "Mintass/rose-pine-dawn"
+rev = "5c6d353"
+hash = "d9d9463d5d43ced18e18986d05439ace"

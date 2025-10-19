@@ -1,0 +1,109 @@
+{
+  "Ok": {
+    "postfix": "ok",
+    "body": "Ok(${receiver})",
+    "description": "Wrap the expression in a `Result::Ok`",
+    "scope": "expr"
+  },
+  "Err": {
+    "postfix": "err",
+    "body": "Err(${receiver})",
+    "description": "Wrap the expression in a `Result::Err`",
+    "scope": "expr"
+  },
+  "Some": {
+    "postfix": "some",
+    "body": "Some(${receiver})",
+    "description": "Wrap the expression in an `Option::Some`",
+    "scope": "expr"
+  },
+  "Arc::new": {
+    "postfix": "arc",
+    "body": "Arc::new(${receiver})",
+    "requires": "std::sync::Arc",
+    "description": "Put the expression into an `Arc`",
+    "scope": "expr"
+  },
+  "Rc::new": {
+    "postfix": "rc",
+    "body": "Rc::new(${receiver})",
+    "requires": "std::rc::Rc",
+    "description": "Put the expression into an `Rc`",
+    "scope": "expr"
+  },
+  "Box::pin": {
+    "postfix": "pinbox",
+    "body": "Box::pin(${receiver})",
+    "requires": "std::boxed::Box",
+    "description": "Put the expression into a pinned `Box`",
+    "scope": "expr"
+  },
+  "mod_tests": {
+    "prefix": "tests",
+    "body": [
+      "#[cfg(test)]",
+      "mod tests {",
+      "\tuse super::*;",
+      "",
+      "\t#[test]",
+      "\tfn ${1:it_works}() {",
+      "\t\t${2:todo!();}",
+      "\t}",
+      "}"
+    ],
+    "description": "Add tests module",
+    "scope": "item"
+  },
+  "test": {
+    "prefix": "test",
+    "body": [
+      "#[test]",
+      "fn ${1:name}() {",
+      "\t${2:todo!();}",
+      "}"
+    ],
+    "description": "#[test]",
+    "scope": "item"
+  },
+  "macro_rules": {
+    "prefix": "macro_rules",
+    "body": [
+      "macro_rules! $1 {",
+      "\t($2) => {",
+      "\t\t$0",
+      "\t};",
+      "}"
+    ],
+    "description": "Insert macro_rules!",
+    "scope": "item"
+  },
+  "spawn": {
+    "prefix": [
+      "thread_spawn",
+      "spawn"
+    ],
+    "body": [
+      "std::thread::spawn(move || {",
+      "\t$1",
+      "})"
+    ],
+    "description": "Wrap code in thread::spawn",
+    "scope": "item"
+  },
+  "derive": {
+    "prefix": "derive",
+    "body": [
+      "#[derive(${1})]"
+    ],
+    "description": "#[derive(…)]",
+    "scope": "item"
+  },
+  "cfg": {
+    "prefix": "cfg",
+    "body": [
+      "#[cfg(${1})]"
+    ],
+    "description": "#[cfg(…)]",
+    "scope": "item"
+  }
+}

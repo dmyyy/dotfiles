@@ -1,0 +1,15 @@
+
+# don't show path top-left - already done for us by zellij
+[mgr]
+title_format = ""
+
+# open and edit files using helix
+[opener]
+edit = [
+	{ run = 'hx "$@"', block=true, orphan=true, for = "unix" }
+	# { run = "hx % %*",  block = true, for = "windows" },
+]
+open = [
+	{ run = 'hx "$@"', desc = "Open" },
+]
+

@@ -1,0 +1,17 @@
+[mgr]
+prepend_keymap = [
+  { on = "o", for  = "unix", run  = [
+      'shell "zellij run -i -c -- hx ."',
+    ], desc = "Open project" },
+  { on = ["g", "c"], run = "cd ~/.config", desc = "cd to ~/.config" },
+  { on = ["g", "j"], run = "cd ~/journal", desc = "cd to ~/journal" },
+  { on = ["g", "r"], run = "cd ~/rust", desc = "cd to ~/rust" },
+  { on = ["g", "b"], run = "cd ~/rust/bevy", desc = "cd to ~/rust/bevy" },
+  # { on = [ "t", "n" ], for  = "unix", run = 'shell -- ya emit emit "update_tab_name"', desc = "Update zellij tab name" }  
+  # { on   = "t", run  = "plugin smart-tab", desc = "Create a tab and enter the hovered directory" }
+]
+
+[[input.prepend_keymap]]
+on   = "<Esc>"
+run  = "close"
+desc = "Cancel input"
