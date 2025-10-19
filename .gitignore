@@ -21,7 +21,7 @@
 !.config/fish
 !.config/yazi
 !.config/helix
-.config/helix/runtime
+.config/helix/runtime/*
 !.config/zellij
 
 # fonts
