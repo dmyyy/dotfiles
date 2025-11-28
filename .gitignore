@@ -1,10 +1,7 @@
 # ignore all files/folders in root 
 /*
 
-**/.DS_Store
-**.log
-
-# except for these files 
+# except for these config files 
 !.gitignore
 !.gitconfig
 !README.md
@@ -34,3 +31,6 @@ rust/*
 
 # keyd
 !/etc/keyd/default.conf
+
+# bacon prefs
+!/Users/dmy/Library/Application Support/org.dystroy.bacon/prefs.toml

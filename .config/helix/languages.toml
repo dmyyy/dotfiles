@@ -59,4 +59,5 @@ formatter = { command = "dprint", args = ["fmt", "--stdin", "md"]}
 auto-format = true
 soft-wrap.enable = true
 soft-wrap.wrap-at-text-width = true
+soft-wrap.wrap-indicator = ""
 

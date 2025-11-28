@@ -1,15 +1,15 @@
-theme = "modus_operandi_tinted"
+# theme = "modus_operandi_tinted"
+theme = "yo_modified"
+
+# [theme]
+# dark = "yo_modified"
+# light = "yo_light_modified"
 
 [keys.normal.space.t]
 "0" = ":theme github_light"
-"1" = ":theme ao"
-"2" = ":theme hex_lavender_modified"
-"3" = ":theme gruber-darker"
-"4" = ":theme rose_pine"
-"5" = ":theme yo"
-"6" = ":theme ferra"
+"6" = ":theme yo_modified"
 "7" = ":theme gruvbox_light"
-"8" = ":theme modus_operandi_tinted"
+"8" = ":theme yo_light"
 "9" = ":theme flatwhite"
 # run rust unit tests using %{buffer_name} to construct module path
 t = [
@@ -17,8 +17,8 @@ t = [
 ]
 
 [editor]
-bufferline = "never"
-scrolloff = 15
+bufferline = "always"
+scrolloff = 30
 line-number = "relative"
 default-yank-register = '+'
 mouse = false
@@ -31,16 +31,14 @@ completion-timeout = 5
 # rulers = [80]
 text-width = 80
 jump-label-alphabet = "tnseriplfuwydhcxoaqz"
-# end-of-line-diagnostics = "hint"
-end-of-line-diagnostics = "warning"
 
 [editor.whitespace.render]
 space = "all"
-# newline = "all"
+newline = "all"
 
 [editor.whitespace.characters]
 space = "·"
-# newline = "⏎"
+newline = "⏎"
 
 [editor.inline-diagnostics]
 cursor-line = "warning" # show warnings and errors on the cursorline inline
@@ -51,7 +49,6 @@ after-delay.timeout = 0
 
 [editor.cursor-shape]
 insert = "bar"
-# insert = "block"
 normal = "block"
 select = "underline"
 
@@ -60,18 +57,20 @@ left = [
   "mode",
   "spinner",
   "version-control",
+  "file-absolute-path",
   "read-only-indicator",
   "file-modification-indicator",
-  "diagnostics"
+  "diagnostics",
 ]
-center = [
-  "file-absolute-path"
-]
+# center = [
+#   "file-absolute-path"
+# ]
 right = [
   "workspace-diagnostics",
   "position",
   "file-encoding",
 ]
+mode = { normal = "🦊 NOR", insert = "🪶 INS", select = "🔍 SEL" }
 
 [editor.file-picker]
 hidden = false
@@ -81,12 +80,17 @@ display-inlay-hints = true
 display-progress-messages = true
 
 [keys.normal]
-"}" = "goto_next_paragraph"
-"{" = "goto_prev_paragraph"
+"{" = ["goto_prev_paragraph", "collapse_selection"]
+"}" = ["goto_next_paragraph", "collapse_selection"]
 tab = "move_parent_node_end"
 S-tab = "move_parent_node_start"
 X = "select_line_above"
-esc = ["collapse_selection", "keep_primary_selection"]
+"," = "repeat_last_motion"
+esc = ["collapse_selection", "keep_primary_selection", ":w"]
+D = ["ensure_selections_forward", "extend_to_line_end", "delete_selection", ":w"]
+# Like in principle but buggy with auto format on save...
+# o = ["open_below", "normal_mode"]
+# O = ["open_above", "normal_mode"]
 
 [keys.insert]
 S-tab = "move_parent_node_start"
@@ -96,14 +100,15 @@ S-tab = "move_parent_node_start"
 "{" = "goto_prev_paragraph"
 tab = "extend_parent_node_end"
 S-tab = "extend_parent_node_start"
-
-# TODO: <space><E> - open diagnostic picker of just errors
+"," = "repeat_last_motion"
+D = ["extend_to_line_bounds", "delete_selection", "normal_mode"]
 
 [keys.normal.space]
-# today's journal
-j = [':open %sh{daily_journal}']
+# toggle diagnostic levels
+# TODO: redo this when https://github.com/helix-editor/helix/pull/12203 lands
+d = [":toggle inline-diagnostics.other-lines error warning", ":toggle end-of-line-diagnostics error warning"]
 i = ":toggle lsp.display-inlay-hints"
-x = ":bc"
+x = [":bc"]
 # yazi
 e = [
   ':sh rm -f /tmp/unique-file',
@@ -111,6 +116,13 @@ e = [
   ':insert-output echo "\x1b[?1049h\x1b[?2004h" > /dev/tty',
   ':open %sh{cat /tmp/unique-file}',
   ':redraw',
+]
+# find and replace using scooter
+s = [
+    ":write-all",
+    ":insert-output scooter --no-stdin >/dev/tty",
+    ":redraw",
+    ":reload-all"
 ]
 # lazygit
 g = [
@@ -121,12 +133,13 @@ g = [
     ":redraw", 
     ":reload-all"
 ]
-# FIXME: need to use diff char for this - overlaps with local diagnostic search
-# toggle diagnostics
-# "d" = [
-#     ":toggle-option inline-diagnostics.cursor-line warning hint disable",
-#     ":toggle-option inline-diagnostics.other-lines warning hint disable",
-# ]
+# config
+"," = ":config-open"
+"C-," = ":config-reload"
+# open first diagnostic in bacon-locations
+E = ":open %sh{head -n 1 .bacon-locations}"
+# daily journal
+j = ":open %sh{daily_journal}"
 
 [editor.indent-guides]
 render = true

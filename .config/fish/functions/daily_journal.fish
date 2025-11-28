@@ -1,9 +1,7 @@
-# create daily journal file and open it
+# creates daily journal (if file doesn't exist) and prints path
 function daily_journal
     set -l DAILY_NOTES "$HOME/journal/daily"
-
     set -l TODAY (date +%Y-%m-%d)
-
     set -l YEAR (date "+%Y")
     set -l MONTH (date "+%m-%B")
     set -l DEST_DIR "$DAILY_NOTES/$YEAR/$MONTH"
@@ -22,6 +20,12 @@ function daily_journal
             echo "# $TODAY"
             echo
             echo ---
+            echo
+            echo TODO:
+            echo
+            echo - []
+            echo - []
+            echo - []
             echo
         end >"$FILE_PATH"
 

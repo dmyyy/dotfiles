@@ -1,3 +1,5 @@
 [user]
 	name = Dmytro Banin
 	email = dima_banin@hotmail.com
+[core]
+	excludesfile = /Users/dmy/.global_gitignore

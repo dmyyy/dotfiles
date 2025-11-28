@@ -1,17 +1,24 @@
 
-inherits = "hex_lavender"
+inherits = "gruvbox_light"
 
-comment = {fg = "#8e80de", bg = "t2"}
-comment_doc = {fg = "#8e80de", bg = "t2"}
-"ui.selection" = {fg = "#290019", bg = "#ff2e5f"}
-"comment.block.documentation" = { bg = "comment_doc"}
-"comment.line.documentation" = { fg = "comment", bg = "t2"}
-"variable" = { fg = "t4" }
-"variable.other.member" = { fg = "t4" } 
-"variable.builtin" = { fg = "t9" } 
+# comment = {fg = "#8e80de", bg = "t2"}
+# comment_doc = {fg = "#8e80de", bg = "t2"}
+# "ui.selection" = {fg = "#290019", bg = "#ff2e5f"}
+# "comment.block.documentation" = { bg = "comment_doc"}
+# "comment.line.documentation" = { fg = "comment", bg = "t2"}
+# "variable" = { fg = "t4" }
+# "variable.other.member" = { fg = "t4" } 
+# "variable.builtin" = { fg = "t9" } 
+
+"ui.bufferline.background" = {}
+"ui.bufferline" = {fg = "white", bg = "17"}
+"ui.bufferline.active" = {fg = "white", bg = "27"}
 
 [palette]
 t4 = "#645778"
+highlight = "159"
+blue = "27"
+# blue = "255"
 
 # OG Hex Lavender
 #

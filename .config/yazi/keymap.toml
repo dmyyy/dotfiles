@@ -1,8 +1,9 @@
 [mgr]
 prepend_keymap = [
-  { on = "o", for  = "unix", run  = [
-      'shell "zellij run -i -c -- hx ."',
-    ], desc = "Open project" },
+  { on = "O", for  = "unix", run  = [
+      # 'shell "zellij run -i -c -- hx ."',
+      'shell "fish -c zellij_open_project"',
+  ], desc = "Open project" },
   { on = ["g", "c"], run = "cd ~/.config", desc = "cd to ~/.config" },
   { on = ["g", "j"], run = "cd ~/journal", desc = "cd to ~/journal" },
   { on = ["g", "r"], run = "cd ~/rust", desc = "cd to ~/rust" },

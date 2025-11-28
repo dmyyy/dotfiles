@@ -11,8 +11,8 @@ keybinds clear-defaults=true {
         bind "d" { NewPane "down"; SwitchToMode "normal"; }
         bind "e" { TogglePaneEmbedOrFloating; SwitchToMode "normal"; }
         bind "f" { ToggleFocusFullscreen; SwitchToMode "normal"; }
-        bind "h" { MoveFocus "left"; }
         bind "i" { TogglePanePinned; SwitchToMode "normal"; }
+        bind "h" { MoveFocus "left"; }
         bind "j" { MoveFocus "down"; }
         bind "k" { MoveFocus "up"; }
         bind "l" { MoveFocus "right"; }
@@ -126,28 +126,22 @@ keybinds clear-defaults=true {
         }
     }
     shared_except "locked" {
-        bind "Alt left" { MoveFocusOrTab "left"; }
-        bind "Alt down" { MoveFocus "down"; }
-        bind "Alt up" { MoveFocus "up"; }
-        bind "Alt right" { MoveFocusOrTab "right"; }
+        bind "Ctrl g" { SwitchToMode "locked"; }
         bind "Alt +" { Resize "Increase"; }
         bind "Alt -" { Resize "Decrease"; }
         bind "Alt =" { Resize "Increase"; }
-        bind "Ctrl [" { PreviousSwapLayout; }
-        bind "Ctrl ]" { NextSwapLayout; }
-        // bind "Alt [" { PreviousSwapLayout; }
-        // bind "Alt ]" { NextSwapLayout; }
         bind "Alt f" { ToggleFloatingPanes; }
-        bind "Ctrl g" { SwitchToMode "locked"; }
         bind "Alt h" { MoveFocusOrTab "left"; }
-        bind "Alt i" { MoveTab "left"; }
         bind "Alt j" { MoveFocus "down"; }
         bind "Alt k" { MoveFocus "up"; }
         bind "Alt l" { MoveFocusOrTab "right"; }
-        bind "Alt n" { NewPane; }
+        bind "Alt i" { MoveTab "left"; }
         bind "Alt o" { MoveTab "right"; }
+        bind "Ctrl k" { GoToNextTab; }
+        bind "Ctrl j" { GoToPreviousTab; }
         bind "Ctrl q" { Quit; }
-        bind "Ctrl l" { Clear; }
+        // ghostty set up to forward C-l to zellij on Cmd-k 
+        bind "Ctrl l" { Clear; Write 13; }
     }
     shared_except "locked" "move" {
         bind "Ctrl h" { SwitchToMode "move"; }
@@ -364,7 +358,7 @@ mouse_mode false
 // Enable automatic copying (and clearing) of selection when releasing mouse
 // Default: true
 // 
-// copy_on_select true
+copy_on_select true
  
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
