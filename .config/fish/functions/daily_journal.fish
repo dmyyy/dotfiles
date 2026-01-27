@@ -19,14 +19,14 @@ function daily_journal
         begin
             echo "# $TODAY"
             echo
-            echo ---
+            echo ===
             echo
-            echo TODO:
             echo
-            echo - []
-            echo - []
-            echo - []
             echo
+            echo ===
+            echo
+            echo "[[index]]"
+            echo "[[roguelite-index]]"
         end >"$FILE_PATH"
 
         # Export a universal path for today's journal

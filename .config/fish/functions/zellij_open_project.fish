@@ -2,10 +2,10 @@
 function zellij_open_project
     # open last diagnostic recorded by bacon
     set -l BACON_LOCATIONS (head -n 1 .bacon-locations)
-    zellij run -i -c -- hx "$BACON_LOCATIONS"
+    zellij run -n "❖ " -i -c -- hx "$BACON_LOCATIONS"
 
     # start bacon
-    zellij run -- bacon
+    zellij run -- bacon -ws
     zellij action resize increase left
     zellij action resize increase left
     zellij action resize increase left

@@ -8,6 +8,8 @@ prepend_keymap = [
   { on = ["g", "j"], run = "cd ~/journal", desc = "cd to ~/journal" },
   { on = ["g", "r"], run = "cd ~/rust", desc = "cd to ~/rust" },
   { on = ["g", "b"], run = "cd ~/rust/bevy", desc = "cd to ~/rust/bevy" },
+  { on = ["="], run = "plugin zoom 1", desc = "Zoom in hovered file" },
+  { on = ["-"], run = "plugin zoom -1", desc = "Zoom out hovered file" },
   # { on = [ "t", "n" ], for  = "unix", run = 'shell -- ya emit emit "update_tab_name"', desc = "Update zellij tab name" }  
   # { on   = "t", run  = "plugin smart-tab", desc = "Create a tab and enter the hovered directory" }
 ]
@@ -16,3 +18,4 @@ prepend_keymap = [
 on   = "<Esc>"
 run  = "close"
 desc = "Cancel input"
+

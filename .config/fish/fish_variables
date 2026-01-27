@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR DAILY_JOURNAL:/Users/dmy/journal/daily/2025/11\x2dNovember/2025\x2d11\x2d27\x2emd
+SETUVAR DAILY_JOURNAL:/Users/dmy/journal/daily/2026/01\x2dJanuary/2026\x2d01\x2d27\x2emd
 SETUVAR --export PYENV_ROOT:/Users/dmy/\x2epyenv
 SETUVAR TODAY:2025\x2d09\x2d12
 SETUVAR __fish_initialized:3800

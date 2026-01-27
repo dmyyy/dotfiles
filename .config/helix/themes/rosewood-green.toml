@@ -1,0 +1,14 @@
+# Inspired by yo
+# https://github.com/mrmcc3/yo-theme-helix
+
+inherits = "rosewood"
+
+[palette]
+cursor = "#00ff00"
+bg = "#000900"
+
+# buffer/status
+ui_bg = "#233421"
+ui_bg_dark = "#031002"
+ui_bg_selected = "#004000"
+select = "#002300"

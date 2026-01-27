@@ -2,7 +2,8 @@
 function zellij_home
     # journal
     daily_journal
-    zellij run -i -c -- hx $DAILY_JOURNAL
+    cd journal
+    zellij run -n "❖ " -i -c -- hx $DAILY_JOURNAL
 
     # btop - diagnostics dashboard
     zellij run -- btop

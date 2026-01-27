@@ -22,6 +22,7 @@ keybinds clear-defaults=true {
         bind "r" { NewPane "right"; SwitchToMode "normal"; }
         bind "w" { ToggleFloatingPanes; SwitchToMode "normal"; }
         bind "z" { TogglePaneFrames; SwitchToMode "normal"; }
+        bind "s" { NewPane "stacked"; SwitchToMode "normal"; }
     }
     tab {
         bind "left" { GoToPreviousTab; }
@@ -300,7 +301,8 @@ layout_dir "~/.config/zellij/layouts"
 //   - false
 // 
 mouse_mode false
- 
+advanced_mouse_actions false 
+
 // Toggle having pane frames around the panes
 // Options:
 //   - true (default, enabled)
@@ -427,7 +429,8 @@ attach_to_session true
 // Default: true (if the host terminal supports it)
 // 
 // NOTE: Set to false for Alt to work normally in zellij on mac
-support_kitty_keyboard_protocol false
+// support_kitty_keyboard_protocol false
+support_kitty_keyboard_protocol true
  
 // Whether to stack panes when resizing beyond a certain size
 // Default: true
@@ -447,7 +450,7 @@ show_startup_tips false
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-// theme "cyber-noir"
+// theme "default"
 // theme "ansi-highlight"
 theme "ansi-highlight"
 
@@ -531,8 +534,8 @@ themes {
             emphasis_3 5
         }
         frame_unselected {
-            // base 48 52 70
-            base 86 91 117
+            // base 172
+            base 0
             background 0
             emphasis_0 239 159 118
             emphasis_1 153 209 219
@@ -540,7 +543,7 @@ themes {
             emphasis_3 0
         }
         frame_selected {
-            base 27
+            base 172
             background 0
             emphasis_0 9
             emphasis_1 6

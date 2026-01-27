@@ -17,6 +17,10 @@ if status is-interactive
     set PATH $HOME/.cargo/bin $PATH
     # llvm
     set PATH "$(brew --prefix)/opt/llvm/bin:$PATH" $PATH
+    set PATH $HOME/.cargo/bin $PATH
+    # yazi
+    set PATH /usr/local/bin/yazi $PATH
+    set PATH /usr/local/bin/ya $PATH
 
     # helix editor
     # 
@@ -26,7 +30,6 @@ if status is-interactive
     set HELIX_RUNTIME ~/rust/helix/runtime
 
     # FIXME: this doesn't work I think... ghostty uses one in Library
-    # 
     # ghostty depends on this to find config folder
     set XDG_CONFIG_HOME $HOME/.config
 
@@ -39,9 +42,6 @@ if status is-interactive
     # neovim
     set -U fish_user_paths $HOME/.local/share/bob/nvim-bin $fish_user_paths
 
-    # enable starship
-    starship init fish | source
-
     # bash aliases
     abbr cl clear
     abbr cat bat
@@ -50,10 +50,10 @@ if status is-interactive
 
     # cargo aliases
     abbr ca 'cargo add'
-    abbr cr 'RUSTFLAGS=-Awarnings cargo run -q'
-    abbr cb 'RUSTFLAGS=-Awarnings cargo build -q'
+    abbr cr 'cargo run'
+    abbr cb 'cargo build'
     abbr cc 'cargo check'
-    abbr cre 'RUSTFLAGS=-Awarnings cargo run -q --example'
+    abbr cre 'cargo run --example'
     abbr ctls 'RUSTFLAGS=-Awarnings cargo test -q -- --list'
     abbr ct 'RUSTFLAGS=-Awarnings cargo test -q -- --nocapture'
 
@@ -71,6 +71,9 @@ if status is-interactive
     abbr gr 'git remote -v'
     abbr gaa 'git add -A'
     abbr gcm 'git commit -m'
+
+    # starship init
+    starship init fish | source
 
     # y shell wrapper that allows changing current working dir on yazi exit
     function y

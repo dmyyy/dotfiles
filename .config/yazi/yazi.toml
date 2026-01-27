@@ -1,15 +1,24 @@
-
 # don't show path top-left - already done for us by zellij
 [mgr]
 title_format = ""
 
 # open and edit files using helix
 [opener]
+open = [
+	{ run = 'open "$@"', desc = "Open", for = "unix" },
+	# { run = 'hx "$@"', desc = "Open" },
+]
 edit = [
 	{ run = 'hx "$@"', block=true, orphan=true, for = "unix" }
 	# { run = "hx % %*",  block = true, for = "windows" },
 ]
-open = [
-	{ run = 'hx "$@"', desc = "Open" },
+
+[open]
+prepend_rules = [
+	{ name = "*.html", use = [ "open", "edit" ] },
 ]
 
+[preview]
+max_width = 8000
+max_height = 8000
+image_delay = 0

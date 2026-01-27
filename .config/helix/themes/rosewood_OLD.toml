@@ -1,0 +1,148 @@
+inherits = "yo"
+
+# reddish black
+"ui.background" = { bg = "bg" }
+
+ui.background.separator = "ui_bg"
+
+# popups/menus
+"ui.popup" = { fg = "p12", bg = "ui_bg_dark" }
+"ui.popup.info" = { fg = "p12", bg = "ui_bg_dark" }
+"ui.text.info" = { fg = "p12", bg = "ui_bg_dark" }
+"ui.text.focus" = { bg = "ui_bg_selected" }
+"ui.help" = { fg = "p12", bg = "ui_bg_dark" }
+"ui.menu" = { fg = "p11", bg = "ui_bg_dark" }
+"ui.menu.selected" = { fg = "p12", bg = "ui_bg_selected", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "p8", bg = "ui_bg" }
+"ui.picker.header.column" = { underline.style = "line" }
+"ui.highlight" = { bg = "rose2" }
+
+# code
+variable = { fg = "p10_orange" }
+namespace = { fg = "p8" }
+punctuation = { fg = "p9" }  # ([{}])
+"punctuation.delimiter" = { fg = "p8" }  # ,;:
+function = { fg = "p11_blue" }
+# "function.builtin" = "p8"
+# "function.special" = "p8"
+# "function.macro" = "p8"
+"special" = "p11_blue"
+attribute = { fg = "p10" }
+tag = { fg = "keyword" }
+label = { fg = "p12" }
+constructor = { fg = "p12_orange" }
+type = { fg = "p12_orange" }
+# type = { fg = "p11_orange" }
+
+# cursor/selection
+"ui.cursor.primary" = { fg = "p12", bg = "cursor" }
+# "ui.selection.primary" = { bg = "rose5" }
+"ui.selection.primary" = { bg = "rose2" }
+"ui.cursorline.primary" = {}
+"ui.cursor.match" = { fg = "cursor", modifiers = ["bold"]}
+
+# bufferline/statusline
+"ui.bufferline" = { fg = "p10", bg = "ui_bg" }
+"ui.bufferline.active" = { fg = "p12", bg = "ui_bg_selected"}
+"ui.statusline" = { fg = "p11", bg = "ui_bg" }
+"ui.statusline.inactive" = { fg = "p11", bg = "ui_bg_dark" }
+"ui.statusline.normal" = { fg = "p2", bg = "" }
+"ui.statusline.insert" = { fg = "p2", bg = "" }
+"ui.statusline.select" = { fg = "p2", bg = "" }
+"ui.statusline.separator" = { fg = "p7" }
+
+# diagnostics
+"diagnostic.error" = { underline = { color = "error", style = "curl" }}
+"diagnostic.warning" = { fg = ""}
+"diagnostic.hint" = { fg = ""}
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+
+error = { fg = "error" }
+warning = { fg = "warning" }
+# info = { fg = "constant" }
+info = { fg = "warning" }
+hint = { fg = "hint", modifiers = ["dim"] }
+
+# locals
+"local" = { underline = { color = "info", style = "curl" }}
+
+# virtual
+"ui.virtual.jump-label" = { fg = "p12", modifiers = [
+  "bold",
+], underline = {} }
+"ui.virtual.inlay-hint" = { fg = "p7", modifiers = ["italic"] }
+"ui.virtual.whitespace" = { fg = "p4" }
+
+# line numbers / diff
+"ui.gutter" = { bg = "ui_bg_dark" }
+"ui.linenr" = { fg = "p8" }
+"ui.linenr.selected" = { fg = "p12" }
+"diff.plus" = { fg = "diff_add" }
+"diff.delta" = { fg = "warning" }
+"diff.minus" = { fg = "error" }
+
+"keyword.storage.modifier.mut" = { fg = "error" }
+"comment.line.documentation" = { fg = "docs" }
+
+"markup" = "docs_highlight"
+"markup.heading" = { fg = "info", modifiers = ["bold"] }
+"markup.list" = { fg = "string" }
+
+# https://www.radix-ui.com/colors
+[palette]
+bg = "#110103"
+
+# buffer/status
+ui_bg = "#41262a"
+ui_bg_dark = "#1a0508"
+ui_bg_selected = "#62001c"
+
+info = "#05a6a3" # blue-tinted teal-10
+docs = "#437573"     # 
+docs_highlight = "#89805a"
+
+constant = "#7f94ff" # dark blue adjusted cyan-10
+
+string = "#ee518a"   # crimson-10
+
+diff_add = "#33b074" # green-10
+hint = "#3b9eff"     # blue-10 
+error = "#d7004b"
+warning = "#cd6000"
+
+# amber
+a1 = "#16120c"
+a2 = "#1d180f"
+a3 = "#302008"
+a4 = "#3f2700"
+a5 = "#4d3000"
+a6 = "#5c3d05"
+a7 = "#714f19"
+
+cursor = "#ff0000"
+
+keyword = "#b68067"  # more chromatic bronze dark-10
+mut = "#c76f8b" # hand picked pink that's slightly more emphasized 
+
+rose2 = "#38000c"
+
+# sage (override yo's default dark gray with green-gray)
+p1 = "#101211"
+p2 = "#171918"
+p3 = "#202221"
+p4 = "#272a29"
+p5 = "#2e3130"
+p6 = "#373b39"
+p7 = "#444947"
+p8 = "#5b625f"
+p9 = "#63706b"
+p10 = "#717d79"
+p11 = "#adb5b2"
+p12 = "#eceeed"
+
+p11_blue = "#a6b2d3"
+
+p10_orange = "#807970"
+p11_orange = "#c8ae91"
+p12_orange = "#ffe9d2"
