@@ -1,6 +1,15 @@
 simplified_ui false
 
 layout {
+    tab name="🌐" split_direction="vertical" {
+        pane {
+            command "qutebrowser"
+        }
+        pane {
+            command "hx"
+            args "README.md"
+        }
+    }
     tab name="journal" split_direction="vertical" {
         pane {
             command "fish"

@@ -21,7 +21,33 @@ function daily_journal
             echo
             echo ===
             echo
+            echo "## TODO:"
             echo
+            echo "[] -"
+            echo
+            echo "## Aha! Moments"
+            echo
+            echo "## Moments of Inspiration"
+            echo
+            echo "_The rational mind is a servant. The intuitive mind is a sacred gift._"
+            echo
+            echo ---
+            echo
+            echo "## Journal"
+            echo
+            echo "How is it going?"
+            echo
+            echo ---
+            echo
+            echo "## Reflection"
+            echo
+            echo "What am I..."
+            echo
+            echo "- grateful for"
+            echo "- proud of"
+            echo "- excited about"
+            echo "- avoiding"
+            echo "- going to do tomorrow"
             echo
             echo ===
             echo

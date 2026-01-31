@@ -5,8 +5,8 @@ inherits = "rosewood"
 
 [palette]
 cursor = "#ff00ff"
-bg = "#000312"
-
+# bg = "#000312"
+bg = "#00010d"
 # buffer/status
 ui_bg = "#242f44"
 ui_bg_dark = "#050b1d"
