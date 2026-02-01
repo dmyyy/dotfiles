@@ -50,9 +50,9 @@ if status is-interactive
 
     # cargo aliases
     abbr ca 'cargo add'
-    abbr cr 'cargo run'
-    abbr cb 'cargo build'
-    abbr cc 'cargo check'
+    abbr cr 'cargo lrun'
+    abbr cb 'cargo lbuild'
+    abbr cc 'cargo lcheck'
     abbr cre 'cargo run --example'
     abbr ctls 'RUSTFLAGS=-Awarnings cargo test -q -- --list'
     abbr ct 'RUSTFLAGS=-Awarnings cargo test -q -- --nocapture'

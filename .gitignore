@@ -15,22 +15,27 @@
 # config
 !.config/
 .config/*
+!.config/alacritty/alacritty.toml
+!.config/alacritty/theme.toml
+!.config/btop/btop.conf
 !.config/fish
-!.config/yazi
 !.config/helix
 .config/helix/runtime/*
+!.config/yazi
 !.config/zellij
 
-# fonts
-!.fonts/
+# mac-specific
+!.config/yabai
+
+# qutebrowser
+!.qutebrowser/
+!.local/share/qutebrowser/
 
 # rust
 !rust/
 rust/*
 !rust/.cargo
 
-# keyd
-!/etc/keyd/default.conf
-
-# bacon prefs
+# bacon
 !/Users/dmy/Library/Application Support/org.dystroy.bacon/prefs.toml
+!/Users/dmy/bacon.toml

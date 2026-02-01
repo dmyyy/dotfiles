@@ -1,41 +1,45 @@
 simplified_ui false
 
 layout {
-    tab name="🌐" split_direction="vertical" {
-        pane {
+    tab name="" split_direction="vertical" {
+        pane size="35%" {
             command "qutebrowser"
         }
-        pane {
+        pane name="~" focus=true {
             command "hx"
-            args "README.md"
+            args "README.md" ".gitignore"
         }
     }
-    tab name="journal" split_direction="vertical" {
-        pane {
+    tab name="" split_direction="vertical" {
+        pane size="35%" {
+            command "btop"
+        }
+        pane focus=true {
             command "fish"
-            args "-c" "zellij_home"
+            args "-c" "zellij_journal"
         }
     }
 
     default_tab_template {
         pane size=1 borderless=true {
             plugin location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {
+                format_left " ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆"
                 format_center "{tabs}"
                 format_right  " {mode} "
 
-                mode_locked        "#[bg=red,fg=white,bold]  LOCKED "
-                mode_pane          "#[bg=blue,fg=white,bold] 󰖯 PANE "
-                mode_rename_pane   "#[bg=blue,fg=white,bold]  RENAME_PANE "
-                mode_tab           "#[bg=blue,fg=white,bold]  TAB "
-                mode_rename_tab    "#[bg=blue,fg=white,bold]  RENAME_TAB "
-                mode_session       "#[bg=cyan,fg=white,bold]  SESSION "
-                mode_scroll        "#[bg=magenta,fg=white,bold]  SCROLL "
-                mode_enter_search  "#[bg=magenta,fg=white,bold]  ENTER_SEARCH " 
-                mode_search        "#[bg=magenta,fg=white,bold]  SEARCH "
-                mode_resize        "#[bg=yellow,fg=black,bold]  RESIZE "
-                mode_move          "#[bg=yellow,fg=black,bold]  MOVE "
-                mode_prompt        "#[bg=green,fg=white,bold]  PROMPT "
-                mode_tmux          "#[bg=green,fg=white,bold] TMUX "
+                mode_locked        "#[fg=red]#[bg=red,fg=0]L LOCKED#[fg=red] "
+                mode_pane          "#[fg=blue]#[bg=blue,fg=0]󰖯  PANE#[fg=blue] "
+                mode_rename_pane   "#[fg=blue]#[bg=blue,fg=0]  RENAME_PANE#[fg=blue] "
+                mode_tab           "#[fg=blue]#[bg=blue,fg=0]  TAB#[fg=blue] "
+                mode_rename_tab    "#[fg=blue]#[bg=blue,fg=0]  RENAME_TAB#[fg=blue] "
+                mode_session       "#[fg=cyan]#[bg=cyan,fg=0]  SESSION#[fg=cyan] "
+                mode_scroll        "#[fg=magenta]#[bg=magenta,fg=0]  SCROLL#[fg=magenta] "
+                mode_enter_search  "#[fg=magenta]#[bg=magenta,fg=0]  ENTER_SEARCH#[fg=magenta] " 
+                mode_search        "#[fg=magenta]#[bg=magenta,fg=0]  SEARCH#[fg=magenta] "
+                mode_resize        "#[fg=yellow]#[bg=yellow,fg=0]  RESIZE#[fg=yellow] "
+                mode_move          "#[fg=yellow]#[bg=yellow,fg=0]  MOVE#[fg=yellow] "
+                mode_prompt        "#[fg=green]#[bg=green,fg=0]  PROMPT#[fg=green] "
+                mode_tmux          "#[fg=green]#[bg=green,fg=0] TMUX#[fg=green] "
                 
                 tab_normal "#[fg=white] ◇  {name} "
                 tab_active "#[fg=159,bold] ◆  {name} "
@@ -47,22 +51,23 @@ layout {
     new_tab_template hide_floating_panes=true {
         pane size=1 borderless=true {
             plugin location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {
+                format_left " ⋆｡ﾟ☁︎｡⋆｡ ﾟ☾ ﾟ｡⋆"
                 format_center "{tabs}"
                 format_right  " {mode} "
 
-                mode_locked        "#[bg=red,fg=white,bold]  LOCKED "
-                mode_pane          "#[bg=blue,fg=white,bold] 󰖯 PANE "
-                mode_rename_pane   "#[bg=blue,fg=white,bold]  RENAME_PANE "
-                mode_tab           "#[bg=blue,fg=white,bold]  TAB "
-                mode_rename_tab    "#[bg=blue,fg=white,bold]  RENAME_TAB "
-                mode_session       "#[bg=cyan,fg=white,bold]  SESSION "
-                mode_scroll        "#[bg=magenta,fg=white,bold]  SCROLL "
-                mode_enter_search  "#[bg=magenta,fg=white,bold]  ENTER_SEARCH " 
-                mode_search        "#[bg=magenta,fg=white,bold]  SEARCH "
-                mode_resize        "#[bg=yellow,fg=black,bold]  RESIZE "
-                mode_move          "#[bg=yellow,fg=black,bold]  MOVE "
-                mode_prompt        "#[bg=green,fg=white,bold]  PROMPT "
-                mode_tmux          "#[bg=green,fg=white,bold] TMUX "
+                mode_locked        "#[fg=red]#[bg=red,fg=0]LLOCKED#[fg=red] "
+                mode_pane          "#[fg=blue]#[bg=blue,fg=0]󰖯 PANE#[fg=blue] "
+                mode_rename_pane   "#[fg=blue]#[bg=blue,fg=0] RENAME_PANE#[fg=blue] "
+                mode_tab           "#[fg=blue]#[bg=blue,fg=0] TAB#[fg=blue] "
+                mode_rename_tab    "#[fg=blue]#[bg=blue,fg=0] RENAME_TAB#[fg=blue] "
+                mode_session       "#[fg=cyan]#[bg=cyan,fg=0] SESSION#[fg=cyan] "
+                mode_scroll        "#[fg=magenta]#[bg=magenta,fg=0] SCROLL#[fg=magenta] "
+                mode_enter_search  "#[fg=magenta]#[bg=magenta,fg=0] ENTER_SEARCH#[fg=magenta] " 
+                mode_search        "#[fg=magenta]#[bg=magenta,fg=0] SEARCH#[fg=magenta] "
+                mode_resize        "#[fg=yellow]#[bg=yellow,fg=0] RESIZE#[fg=yellow] "
+                mode_move          "#[fg=yellow]#[bg=yellow,fg=0] MOVE#[fg=yellow] "
+                mode_prompt        "#[fg=green]#[bg=green,fg=0] PROMPT#[fg=green] "
+                mode_tmux          "#[fg=green]#[bg=green,fg=0] TMUX#[fg=green] "
 
                 tab_normal "#[fg=white] ◇  {name} "
                 tab_active "#[fg=159,bold] ◆  {name} "
