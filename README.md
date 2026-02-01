@@ -2,8 +2,6 @@
 
 ---
 
-TODO: info about software I use/have installed that's needed for reproducing setup on another computer
-
 ## Bacon
 
 - global prefs are platform dependent
@@ -13,11 +11,12 @@ TODO: info about software I use/have installed that's needed for reproducing set
 - cargo-limit
 - cargo-sweep
 
-## Qutebrowser
-
-- config and userscripts locations are platform dependent
-
-## Font
+## Fonts
 
 - `brew install --cask font-zed-mono-nerd-font`
 - San Francisco - default mac font
+
+## Qutebrowser
+
+- config and userscripts paths are platform dependent
+- needed a system-wide pynacl install and to be launched from terminal
