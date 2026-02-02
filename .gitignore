@@ -1,7 +1,8 @@
 # ignore all files/folders in root 
 /*
 
-# except for these config files 
+# except for dotfiles
+
 !.gitignore
 !.gitconfig
 !README.md
@@ -25,11 +26,8 @@
 !.config/zellij
 
 # Music
-!.config/.mpdconf
+!.mpd/
 !.config/rmpc
-
-# mac-specific
-!.config/yabai
 
 # qutebrowser
 !.qutebrowser/
@@ -43,4 +41,7 @@ rust/*
 # bacon
 !/Users/dmy/Library/Application Support/org.dystroy.bacon/prefs.toml
 !/Users/dmy/bacon.toml
+
+# mac-specific
+!.config/yabai
 

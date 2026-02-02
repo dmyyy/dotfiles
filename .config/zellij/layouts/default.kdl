@@ -1,6 +1,11 @@
 simplified_ui false
 
 layout {
+    tab name="" split_direction="vertical" {
+        pane name="music" focus=true {
+            command "rmpc"
+        }
+    }
     tab name="" split_direction="vertical" {
         pane size="35%" {
             command "qutebrowser"
