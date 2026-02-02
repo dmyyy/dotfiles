@@ -15,7 +15,8 @@
 # config
 !.config/
 .config/*
-!.config/alacritty
+!.config/alacritty/alacritty.toml
+!.config/alacritty/theme.toml
 !.config/btop/btop.conf
 !.config/fish
 !.config/helix
@@ -24,7 +25,7 @@
 !.config/zellij
 
 # Music
-!.config/.mpd
+!.config/.mpdconf
 !.config/rmpc
 
 # mac-specific
