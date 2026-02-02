@@ -4,8 +4,8 @@
 # background/text
 "ui.background" = { fg = "p11", bg = "bg" }
 "ui.background.separator" = { fg = "ui_bg" }
-"ui.text" = { fg = "p11" }
-"ui.text.focus" = { fg = "p12", bg = "ui_bg_selected", modifiers = ["bold"] }
+"ui.text" = { fg = "p10" }
+"ui.text.focus" = { fg = "p12", bg = "ui_bg_selected" }
 # popups/menus
 "ui.window" = { fg = "p7" }
 "ui.popup" = { fg = "p12", bg = "ui_bg_dark" }
@@ -13,7 +13,7 @@
 "ui.text.info" = { fg = "p12", bg = "ui_bg_dark" }
 "ui.help" = { fg = "p12", bg = "ui_bg_dark" }
 "ui.menu" = { fg = "p11", bg = "ui_bg_dark" }
-"ui.menu.selected" = { fg = "p12", bg = "ui_bg_selected", modifiers = ["bold"] }
+"ui.menu.selected" = { fg = "p12", bg = "ui_bg_selected" }
 "ui.menu.scroll" = { fg = "p8", bg = "ui_bg" }
 "ui.picker.header.column" = { underline.style = "line" }
 "ui.highlight" = { bg = "select" }
@@ -22,9 +22,9 @@
 "ui.cursor.insert" = { fg = "p2", bg = "keyword" }
 "ui.cursor.select" = { fg = "p2", bg = "p12" }
 "ui.cursor.match" = { fg = "cursor", modifiers = ["bold"] }
-"ui.cursor.primary" = { fg = "p12", bg = "cursor", modifiers = ["bold"] }
-"ui.cursor.primary.insert" = { fg = "p2", bg = "keyword", modifiers = ["bold"] }
-"ui.cursor.primary.select" = { fg = "p2", bg = "p12", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "p12", bg = "cursor" }
+"ui.cursor.primary.insert" = { fg = "p12", bg = "cursor" }
+"ui.cursor.primary.select" = { fg = "p12", bg = "cursor" }
 "ui.selection" = { bg = "p5" }
 # "ui.selection.primary" = { bg = "p6" }
 "ui.selection.primary" = { bg = "p6_blue" }
@@ -51,9 +51,7 @@
 "ui.virtual" = { fg = "p6" }
 "ui.virtual.ruler" = { bg = "p3" }
 "ui.virtual.inlay-hint" = { fg = "p7", modifiers = ["italic"] }
-"ui.virtual.jump-label" = { fg = "cursor", modifiers = [
-  "bold",
-] }
+"ui.virtual.jump-label" = { fg = "cursor" }
 "ui.virtual.whitespace" = { fg = "p4" }
 # diagnostics
 error = { fg = "error" }
@@ -68,6 +66,7 @@ hint = { fg = "hint", modifiers = ["dim"] }
 "diagnostic.hint" = { fg = "" }
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
+tabstop = { bg = "p6_blue" }
 # code
 comment = { fg = "info" }
 "comment.line.documentation" = { fg = "docs" }
@@ -95,17 +94,14 @@ type = { fg = "p12_orange" }
 "local" = { underline = { color = "info", style = "curl" } }
 # markup
 "markup" = "docs_highlight"
-"markup.bold" = { modifiers = ["bold"] }
-"markup.italic" = { modifiers = ["italic"] }
+"markup.bold" = { fg = "docs_highlight", modifiers = ["bold"] }
+"markup.italic" = { fg = "docs_highlight", modifiers = ["italic"] }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
 "markup.heading" = { fg = "info", modifiers = ["bold"] }
 "markup.heading.marker" = { fg = "p8" }
 "markup.list" = { fg = "string" }
 "markup.link.url" = { underline.style = "line" }
 "markup.link.label" = { underline.style = "dotted" }
-# "markup.link.text" = {}
-"markup.quote" = { fg = "p10" }
-# "markup.raw" = {}
 
 # https://www.radix-ui.com/colors
 [palette]
@@ -126,7 +122,8 @@ warning = "#cd6000"
 keyword = "#b68067"  # more chromatic bronze dark-10
 mut = "#c76f8b"  # hand picked pink that's slightly more emphasized
 docs = "#437573"
-docs_highlight = "#89805a"
+# docs_highlight = "#89805a"
+docs_highlight = "#a58f23"
 # shades of gray
 p1 = "#111111"
 p2 = "#191919"
@@ -140,6 +137,7 @@ p8 = "#606060"
 p9 = "#6e6e6e"
 p10 = "#7b7b7b"
 p11 = "#b4b4b4"
+p11_green = "#8cc0bd"
 p12 = "#eeeeee"
 # tinted
 p11_blue = "#a6b2d3"

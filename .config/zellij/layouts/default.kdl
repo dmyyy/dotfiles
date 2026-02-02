@@ -10,7 +10,7 @@ layout {
             args "README.md" ".gitignore"
         }
     }
-    tab name="" split_direction="vertical" {
+    tab name="" split_direction="vertical" focus=true {
         pane size="35%" {
             command "btop"
         }

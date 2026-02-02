@@ -15,14 +15,17 @@
 # config
 !.config/
 .config/*
-!.config/alacritty/alacritty.toml
-!.config/alacritty/theme.toml
+!.config/alacritty
 !.config/btop/btop.conf
 !.config/fish
 !.config/helix
 .config/helix/runtime/*
 !.config/yazi
 !.config/zellij
+
+# Music
+!.config/.mpd
+!.config/rmpc
 
 # mac-specific
 !.config/yabai
@@ -39,3 +42,4 @@ rust/*
 # bacon
 !/Users/dmy/Library/Application Support/org.dystroy.bacon/prefs.toml
 !/Users/dmy/bacon.toml
+

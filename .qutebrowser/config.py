@@ -3,7 +3,6 @@ import platform
 
 import catppuccin
 
-
 c = c  # noqa: F821 pylint: disable=E0602,C0103
 config = config  # noqa: F821 pylint: disable=E0602,C0103
 # pylint settings included to disable linting errors
@@ -11,8 +10,7 @@ config = config  # noqa: F821 pylint: disable=E0602,C0103
 config.load_autoconfig(False) # don't load from gui
 
 # --------------------------------theme--------------------------------
-# set the flavor you'd like to use
-# valid options are 'mocha', 'macchiato', 'frappe', and 'latte'
+# 'mocha', 'macchiato', 'frappe', and 'latte'
 # last argument (optional, default is False): enable the plain look for the menu rows
 catppuccin.setup(c, 'mocha', True)# pylint: disable=C0111
 
@@ -27,9 +25,9 @@ catppuccin.setup(c, 'mocha', True)# pylint: disable=C0111
 #     return props
 
 # xresources = read_xresources("*")
-
-c.colors.statusbar.normal.bg = "#00000000"
-c.colors.statusbar.command.bg = "#00000000"
+# 
+# c.colors.statusbar.normal.bg = "#00000000"
+# c.colors.statusbar.command.bg = "#00000000"
 # c.colors.statusbar.normal.bg = xresources["*.background"]
 # c.colors.statusbar.command.bg = xresources["*.background"]
 # c.colors.statusbar.command.fg = xresources["*.foreground"]
@@ -39,9 +37,9 @@ c.colors.statusbar.command.bg = "#00000000"
 # c.colors.statusbar.url.success.https.fg = xresources["*color13"]
 # c.colors.statusbar.url.hover.fg = xresources["*color12"]
 # c.statusbar.show = "always"
-c.colors.tabs.even.bg = "#00000000" # transparent tabs!!
-c.colors.tabs.odd.bg = "#00000000"
-c.colors.tabs.bar.bg = "#00000000"
+# c.colors.tabs.even.bg = "#00000000" # transparent tabs!!
+# c.colors.tabs.odd.bg = "#00000000"
+# c.colors.tabs.bar.bg = "#00000000"
 # c.colors.tabs.even.bg = xresources["*.background"]
 # c.colors.tabs.odd.bg = xresources["*.background"]
 # c.colors.tabs.even.fg = xresources["*.color0"]
@@ -52,7 +50,6 @@ c.colors.tabs.bar.bg = "#00000000"
 # c.colors.tabs.selected.odd.fg = xresources["*.background"]
 # c.colors.hints.bg = xresources["*.background"]
 # c.colors.hints.fg = xresources["*.foreground"]
-c.tabs.show = "multiple"
 
 # c.colors.completion.item.selected.match.fg = xresources["*color6"]
 # c.colors.completion.match.fg = xresources["*color6"]
@@ -87,7 +84,21 @@ c.tabs.show = "multiple"
 # c.url.start_pages = ""
 # c.url.default_page = ""
 
-c.tabs.title.format = "{audio}{current_title}"
+# c.tabs.title.format = "{audio}{current_title}"
+
+c.content.autoplay = False
+
+c.url.default_page = 'https://app.raindrop.io/my/0'
+# c.url.start_pages = ['https://app.raindrop.io/my/0']
+
+c.tabs.show = "multiple"
+c.tabs.width = '15%'
+c.tabs.position = "left"
+
+c.window.hide_decoration = True
+
+c.keyhint.delay = 0
+
 c.fonts.web.size.default = 20
 
 c.url.searchengines = {
@@ -101,16 +112,36 @@ c.url.searchengines = {
 
 c.completion.open_categories = ['searchengines', 'quickmarks', 'bookmarks', 'history', 'filesystem']
 
-
 c.auto_save.session = True # save tabs on quit/restart
 
-# keybinding changes
+# --------------------keys--------------------
+# normal
+config.bind('ge', 'scroll-to-perc 100')
+config.bind('<Ctrl-j>', 'tab-next')
+config.unbind('J', mode='normal')
+config.bind('<Ctrl-k>', 'tab-prev')
+config.unbind('K', mode='normal')
+config.bind('<Ctrl-o>', 'back')
+config.unbind('H', mode='normal')
+config.bind('<Ctrl-i>', 'forward')
+config.unbind('L', mode='normal')
+config.bind('<Alt-i>', 'tab-move +')
+config.bind('<Alt-o>', 'tab-move -')
+config.bind(',r', 'config-source')
+config.bind('gn', 'open -t')
+config.bind('th', 'config-cycle tabs.show multiple never')
+config.bind('sh', 'config-cycle statusbar.show always never')
+
+# caret
+config.bind('gl', 'move-to-end-of-line', mode='caret')
+config.bind('gh', 'move-to-start-of-line', mode='caret')
+config.bind('ge', 'move-to-end-of-document', mode='caret')
+
+# todo: do i need this
 config.bind('=', 'cmd-set-text -s :open')
 config.bind('h', 'history')
 config.bind('cc', 'hint images spawn sh -c "cliphist link {hint-url}"')
 config.bind('cs', 'cmd-set-text -s :config-source')
-config.bind('tH', 'config-cycle tabs.show multiple never')
-config.bind('sH', 'config-cycle statusbar.show always never')
 config.bind('T', 'hint links tab')
 config.bind('pP', 'open -- {primary}')
 config.bind('pp', 'open -- {clipboard}')
@@ -118,8 +149,6 @@ config.bind('pt', 'open -t -- {clipboard}')
 config.bind('qm', 'macro-record')
 config.bind('<ctrl-y>', 'spawn --userscript ytdl.sh')
 config.bind('tT', 'config-cycle tabs.position top left')
-config.bind('gJ', 'tab-move +')
-config.bind('gK', 'tab-move -')
 config.bind('gm', 'tab-move')
 
 # dark mode setup
@@ -129,12 +158,9 @@ config.bind('gm', 'tab-move')
 # config.set('colors.webpage.darkmode.enabled', False, 'file://*')
 
 # styles, cosmetics
-# c.content.user_stylesheets = ["~/.config/qutebrowser/styles/youtube-tweaks.css"]
-# c.tabs.padding = {'top': 5, 'bottom': 5, 'left': 9, 'right': 9}
-# c.tabs.indicator.width = 0 # no tab indicators
-
-c.tabs.width = '15%'
-config.set("tabs.position", "left")
+c.content.user_stylesheets = ["~/.qutebrowser/styles/youtube-tweaks.css"]
+c.tabs.padding = {'top': 5, 'bottom': 5, 'left': 9, 'right': 9}
+c.tabs.indicator.width = 0 # no tab indicators
 
 # fonts
 c.fonts.default_family = "San Francisco"
@@ -155,12 +181,7 @@ config.set("content.cookies.accept", "all")
 config.set("content.cookies.store", True)
 # config.set("content.javascript.enabled", False) # tsh keybind to toggle
 
-# Adblocking info -->
-# For yt ads: place the greasemonkey script yt-ads.js in your greasemonkey folder (~/.config/qutebrowser/greasemonkey).
-# The script skips through the entire ad, so all you have to do is click the skip button.
-# Yeah it's not ublock origin, but if you want a minimal browser, this is a solution for the tradeoff.
-# You can also watch yt vids directly in mpv, see qutebrowser FAQ for how to do that.
-# If you want additional blocklists, you can get the python-adblock package, or you can uncomment the ublock lists here.
+# --------------------adblock--------------------
 c.content.blocking.enabled = True
 # c.content.blocking.method = 'adblock' # uncomment this if you install python-adblock
 # c.content.blocking.adblock.lists = [
@@ -196,7 +217,6 @@ if platform.system() == "Darwin":
         f"spawn --userscript qute-keepassxc --key FCE4350814537D0C6DAAC712DF20929362CA2E48 --socket {socket_path}",
         mode='normal'
     )
-
 # default linux setup!
 # config.bind('<Alt-Shift-u>', 'spawn --userscript qute-keepassxc --key FCE4350814537D0C6DAAC712DF20929362CA2E48', mode='insert')
 # config.bind('pw', 'spawn --userscript qute-keepassxc --key FCE4350814537D0C6DAAC712DF20929362CA2E48', mode='normal')

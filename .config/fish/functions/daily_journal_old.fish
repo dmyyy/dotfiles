@@ -15,35 +15,6 @@ function daily_journal
 
     # Create the file if it doesn't exist
     if not test -f "$FILE_PATH"
-        # Find the most recent entry
-        set -l PREV_ENTRY (
-            find "$DAILY_NOTES" -type f \
-                -regex '.*/[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\.md' \
-                ! -name "$FILE_NAME" \
-                2>/dev/null | sort | tail -n 1
-        )
-
-        # Extract unfinished todo items ([ ] ...) from previous entry
-        set -l PREV_TODOS
-        if test -n "$PREV_ENTRY"
-            set -l IN_TODO 0
-            for line in (cat "$PREV_ENTRY")
-                if test "$line" = "## TODO:"
-                    set IN_TODO 1
-                    continue
-                end
-                if test $IN_TODO -eq 1
-                    if string match -qr '^##\s' -- "$line"
-                        set IN_TODO 0
-                        continue
-                    end
-                    if string match -qr '^\[ \]\s*-' -- "$line"
-                        set -a PREV_TODOS "$line"
-                    end
-                end
-            end
-        end
-
         touch "$FILE_PATH"
         begin
             echo "# $TODAY"
@@ -52,13 +23,7 @@ function daily_journal
             echo
             echo "## TODO:"
             echo
-            if test (count $PREV_TODOS) -gt 0
-                for t in $PREV_TODOS
-                    echo "$t"
-                end
-            else
-                echo "[ ] -"
-            end
+            echo "[ ] -"
             echo
             echo "## Aha! Moments"
             echo
@@ -90,7 +55,7 @@ function daily_journal
             echo "[[roguelite-index]]"
         end >"$FILE_PATH"
 
-        # Export a universal path for today's journal (makes script idempotent if run mutliple times in a day)
+        # Export a universal path for today's journal
         set -U DAILY_JOURNAL "$FILE_PATH"
     end
 

@@ -20,3 +20,8 @@
 
 - config and userscripts paths are platform dependent
 - needed a system-wide pynacl install and to be launched from terminal
+
+## Aplications
+
+- KeePassXC
+- OneDrive
