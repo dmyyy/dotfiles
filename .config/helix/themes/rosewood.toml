@@ -98,6 +98,9 @@ type = { fg = "p12_orange" }
 "markup.italic" = { fg = "docs_highlight", modifiers = ["italic"] }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
 "markup.heading" = { fg = "info", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "string", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "constant", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "warning", modifiers = ["bold"] }
 "markup.heading.marker" = { fg = "p8" }
 "markup.list" = { fg = "string" }
 "markup.link.url" = { underline.style = "line" }

@@ -326,3 +326,100 @@
 2026-02-01T21:31:44 exception: Failed to open /Users/dmy/.mpd/playlists: No such file or directory
 2026-02-01T21:31:49 exception: Failed to open /Users/dmy/.mpd/playlists: No such file or directory
 2026-02-01T21:38:10 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-01T21:43:04 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD7)/01 New York Counterpoint (Part I).m4a"
+2026-02-01T21:47:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-01T21:47:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-01T21:47:56 player: played "high_school/【Chill】W I S H I W A S ft. Cameron Walker - Cutting Ties.mp3"
+2026-02-02T08:48:06 exception: Failed to open /Users/dmy/.mpd/playlists: No such file or directory
+2026-02-02T08:48:06 exception: Failed to open /Users/dmy/.mpd/playlists: No such file or directory
+2026-02-02T08:48:32 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD7)/01 New York Counterpoint (Part I).m4a"
+2026-02-02T08:53:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:53:27 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/01 Music for 18 Musicians - Pulses.m4a"
+2026-02-02T08:53:27 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:53:28 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/02 Music for 18 Musicians - Section I.m4a"
+2026-02-02T08:53:28 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:53:29 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/03 Music for 18 Musicians - Section II.m4a"
+2026-02-02T08:53:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:53:29 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/04 Music for 18 Musicians - Section IIIA.m4a"
+2026-02-02T08:53:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:53:29 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/05 Music for 18 Musicians - Section IIIB.m4a"
+2026-02-02T08:53:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:53:30 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/06 Music for 18 Musicians - Section IV.m4a"
+2026-02-02T08:53:30 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:53:30 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/07 Music for 18 Musicians - Section V.m4a"
+2026-02-02T08:53:30 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:53:31 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/08 Music for 18 Musicians - Section VI.m4a"
+2026-02-02T08:53:31 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:53:31 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/09 Music for 18 Musicians - Section VII.m4a"
+2026-02-02T08:53:31 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:53:31 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/10 Music for 18 Musicians - Section VIII.m4a"
+2026-02-02T08:53:31 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:53:32 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/11 Music for 18 Musicians - Section IX.m4a"
+2026-02-02T08:53:32 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:53:32 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/12 Music for 18 Musicians - Section X.m4a"
+2026-02-02T08:53:32 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:53:33 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/13 Music for 18 Musicians - Section XI.m4a"
+2026-02-02T08:53:33 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:53:37 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:58:20 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T08:59:03 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/01 Music for 18 Musicians - Pulses.m4a"
+2026-02-02T09:11:31 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T09:12:10 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/02 Music for 18 Musicians - Section I.m4a"
+2026-02-02T09:16:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T09:17:23 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/03 Music for 18 Musicians - Section II.m4a"
+2026-02-02T09:20:40 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T09:21:18 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/04 Music for 18 Musicians - Section IIIA.m4a"
+2026-02-02T09:24:17 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T09:25:04 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/05 Music for 18 Musicians - Section IIIB.m4a"
+2026-02-02T09:53:35 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T09:54:17 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/06 Music for 18 Musicians - Section IV.m4a"
+2026-02-02T10:53:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T10:54:14 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/07 Music for 18 Musicians - Section V.m4a"
+2026-02-02T10:58:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T10:59:08 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/08 Music for 18 Musicians - Section VI.m4a"
+2026-02-02T11:02:46 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T11:03:27 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/09 Music for 18 Musicians - Section VII.m4a"
+2026-02-02T11:06:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T11:07:02 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/10 Music for 18 Musicians - Section VIII.m4a"
+2026-02-02T11:11:42 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T11:12:26 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/11 Music for 18 Musicians - Section IX.m4a"
+2026-02-02T11:13:38 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T11:14:16 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/12 Music for 18 Musicians - Section X.m4a"
+2026-02-02T11:19:18 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T11:20:01 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/13 Music for 18 Musicians - Section XI.m4a"
+2026-02-02T11:26:11 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/14 Music for 18 Musicians - Pulses.m4a"
+2026-02-02T14:09:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-02T14:09:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-02T14:09:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T14:25:52 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-02T14:25:52 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-02T14:25:52 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T14:26:37 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD5)/01 Eight Lines.m4a"
+2026-02-02T16:39:27 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-02T16:39:27 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-02T16:39:27 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T16:40:07 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD5)/02 Tehillim (Part I).m4a"
+2026-02-02T16:45:31 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-02T16:45:31 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-02T16:45:31 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T16:46:08 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD5)/03 Tehillim (Part II).m4a"
+2026-02-02T16:51:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-02T16:51:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-02T16:51:43 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-02T16:52:27 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD5)/04 Tehillim (Part III).m4a"
+2026-02-02T16:58:51 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD5)/05 Tehillim (Part IV).m4a"
+2026-02-03T08:59:08 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-03T08:59:08 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-03T08:59:08 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-03T09:16:17 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-03T09:16:17 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-03T09:16:17 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-03T09:16:59 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD5)/01 Eight Lines.m4a"
+2026-02-03T09:28:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-03T09:28:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-03T09:28:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-03T09:28:44 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD5)/02 Tehillim (Part I).m4a"
+2026-02-03T09:34:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-03T09:34:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-03T09:34:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-03T09:34:46 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD5)/03 Tehillim (Part II).m4a"

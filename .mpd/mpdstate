@@ -1,21 +1,21 @@
-sw_volume: 90
+sw_volume: 100
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: play
+state: pause
 current: 0
-time: 252.21
+time: 153.969
 random: 0
 repeat: 0
 single: 0
-consume: 0
+consume: 1
 crossfade: 0
 mixrampdb: 0
 mixrampdelay: -1
 lastloadedplaylist: 
 playlist_begin
-0:Steve Reich/Steve Reich_ Works_ 1965-1995 (CD7)/01 New York Counterpoint (Part I).m4a
-1:high_school/[Flaming June] Maeda Jun x Yanagi Nagi - Last Smile [Subbed].mp3
-2:Steve Reich/Steve Reich_ Works_ 1965-1995 (CD7)/06 Sextet (Part III).m4a
-3:Steve Reich/Steve Reich_ Works_ 1965-1995 (CD9)/14 The Cave - Act 3 (Part III).m4a
-4:high_school/【Chill】W I S H I W A S ft. Cameron Walker - Cutting Ties.mp3
+0:Steve Reich/Steve Reich_ Works_ 1965-1995 (CD5)/04 Tehillim (Part III).m4a
+1:Steve Reich/Steve Reich_ Works_ 1965-1995 (CD5)/05 Tehillim (Part IV).m4a
+2:Steve Reich/Steve Reich_ Works_ 1965-1995 (CD3)/01 Music For Mallet Instruments, Voices And Organ.m4a
+3:Steve Reich/Steve Reich_ Works_ 1965-1995 (CD3)/02 Clapping Music.m4a
+4:Steve Reich/Steve Reich_ Works_ 1965-1995 (CD3)/03 Six Marimbas.m4a
 playlist_end

@@ -7,8 +7,6 @@ light = "gruvbox_light"
 x = ["extend_to_line_bounds", "select_mode"]
 X = ["extend_line_below"]
 esc = ["collapse_selection", "keep_primary_selection", ":w"]
-p = "paste_before"
-P = "paste_after"
 # "{" = ["goto_prev_paragraph", "collapse_selection"]
 # "}" = ["goto_next_paragraph", "collapse_selection"]
 tab = "move_parent_node_end"
@@ -130,8 +128,6 @@ t = [
 
 [keys.select]
 esc = ["collapse_selection", "keep_primary_selection", "normal_mode", ":w"]
-p = "paste_before"
-P = "paste_after"
 # "}" = "goto_next_paragraph"
 # "{" = "goto_prev_paragraph"
 tab = "extend_parent_node_end"
