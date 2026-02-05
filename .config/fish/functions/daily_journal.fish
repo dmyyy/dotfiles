@@ -82,7 +82,7 @@ function daily_journal
             echo "- proud of"
             echo "- excited about"
             echo "- avoiding"
-            echo "- going to do tomorrow"
+            echo "- intentions for tomorrow"
             echo
             echo ===
             echo

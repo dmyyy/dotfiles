@@ -2,7 +2,8 @@
 function zellij_open_project
     # open last diagnostic recorded by bacon
     set -l BACON_LOCATIONS (head -n 1 .bacon-locations)
-    zellij run -n "─" -i -c -- hx "$BACON_LOCATIONS"
+    set project_name (basename $PWD)
+    zellij run -n $project_name -i -c -- hx "$BACON_LOCATIONS"
 
     # start bacon
     zellij run -- bacon -ws
@@ -14,5 +15,5 @@ function zellij_open_project
     zellij action move-pane left
     zellij action move-focus right
 
-    zellij_update_tab_name
+    zellij action rename-tab $project_name
 end

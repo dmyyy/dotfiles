@@ -423,3 +423,117 @@
 2026-02-03T09:34:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
 2026-02-03T09:34:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
 2026-02-03T09:34:46 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD5)/03 Tehillim (Part II).m4a"
+2026-02-04T09:10:46 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T09:10:46 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T09:10:46 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T09:11:31 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD5)/04 Tehillim (Part III).m4a"
+2026-02-04T09:17:15 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T09:17:15 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T09:17:15 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T09:17:55 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD5)/05 Tehillim (Part IV).m4a"
+2026-02-04T09:34:14 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T09:34:14 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T09:34:14 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T09:34:53 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD3)/01 Music For Mallet Instruments, Voices And Organ.m4a"
+2026-02-04T09:39:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T09:39:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T09:39:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T09:39:41 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD3)/02 Clapping Music.m4a"
+2026-02-04T09:56:01 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD3)/03 Six Marimbas.m4a"
+2026-02-04T10:47:19 exception: Failed to open /Users/dmy/.mpd/playlists: No such file or directory
+2026-02-04T10:47:19 exception: Failed to open /Users/dmy/.mpd/playlists: No such file or directory
+2026-02-04T10:48:34 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:48:34 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:48:34 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:50:50 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:50:50 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:50:50 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:51:34 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD9)/01 The Cave - Act 1 (Part I).m4a"
+2026-02-04T10:58:59 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:58:59 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:58:59 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:02 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:02 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:02 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:02 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:02 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:02 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:02 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:02 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:02 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:03 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:04 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:04 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:04 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:04 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:04 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:04 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T10:59:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T10:59:07 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD9)/02 The Cave - Act 1 (Part II).m4a"
+2026-02-04T11:03:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T11:03:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T11:03:05 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T11:03:49 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD9)/03 The Cave - Act 1 (Part III).m4a"
+2026-02-04T11:32:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T11:32:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T11:32:47 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T11:33:25 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD9)/04 The Cave - Act 1 (Part IV).m4a"
+2026-02-04T11:35:19 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T11:35:19 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T11:35:19 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T11:36:02 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD9)/05 The Cave - Act 1 (Part V).m4a"
+2026-02-04T11:40:42 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T11:40:42 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T11:40:42 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T11:41:28 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD9)/06 The Cave - Act 1 (Part VI).m4a"
+2026-02-04T11:44:14 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T11:44:14 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T11:44:14 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T11:44:55 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD9)/07 The Cave - Act 1 (Part VII).m4a"
+2026-02-04T11:45:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T11:45:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T11:45:36 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T11:46:16 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD9)/08 The Cave - Act 1 (Part VIII).m4a"
+2026-02-04T11:50:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T11:50:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-04T11:50:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-04T11:50:46 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD9)/09 The Cave - Act 1 (Part IX).m4a"
+2026-02-05T11:49:50 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD9)/10 The Cave - Act 2 (Part I).m4a"
+2026-02-05T11:50:25 player: played "high_school/Yahari Ore no Seishun Love Come wa Machigatteiru OP - Yukitoki (ユキトキ) - Piano arrangement.mp3"
+2026-02-05T11:50:35 player: played "high_school/Yann Tiersen - Comptine d`un autre ete - l`apres-midi.mp3"
+2026-02-05T11:51:00 player: played "high_school/[Guilty Crown - OST]12. Release My Soul.mp3"
+2026-02-05T11:51:10 player: played "high_school/[Glitch Hop or 110BPM] - Tristam - Till It's Over [Monstercat Release].mp3"
+2026-02-05T11:51:13 player: played "high_school/[Beautiful Soundtracks] Angel Beats Ending Song _ OST - Ichiban no Takaramono (Karuta).mp3"
+2026-02-05T11:51:16 player: played "high_school/[DnB] - Feint - We Won't Be Alone (feat. Laura Brehm) [Monstercat Release].mp3"
+2026-02-05T11:51:31 player: played "high_school/[DnB] - Tristam & Braken - Frame of Mind [Monstercat Release].mp3"
+2026-02-05T11:51:51 player: played "high_school/[Electro] - Tristam & Braken - Far Away [Monstercat Release].mp3"
+2026-02-05T11:51:55 player: played "high_school/[Eng Sub Karaoke] LOVE&ROLL - supercell.mp3"
+2026-02-05T11:51:57 player: played "high_school/[Eng Sub Karaoke] LOVE&ROLL - supercell.mp3"
+2026-02-05T11:52:09 player: played "high_school/[Flaming June] Maeda Jun x Yanagi Nagi - Last Smile [Subbed].mp3"
+2026-02-05T11:52:41 player: played "high_school/トレイル - mamenoi【Piano・ピアノ】.mp3"
+2026-02-05T11:55:47 player: played "high_school/Venemy - Rescue Me (feat. Car) [NCS Release].mp3"

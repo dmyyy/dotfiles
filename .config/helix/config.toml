@@ -7,8 +7,8 @@ light = "gruvbox_light"
 x = ["extend_to_line_bounds", "select_mode"]
 X = ["extend_line_below"]
 esc = ["collapse_selection", "keep_primary_selection", ":w"]
-# "{" = ["goto_prev_paragraph", "collapse_selection"]
-# "}" = ["goto_next_paragraph", "collapse_selection"]
+"{" = ["goto_prev_paragraph"]
+"}" = ["goto_next_paragraph"]
 tab = "move_parent_node_end"
 S-tab = "move_parent_node_start"
 "," = "repeat_last_motion"
@@ -128,8 +128,8 @@ t = [
 
 [keys.select]
 esc = ["collapse_selection", "keep_primary_selection", "normal_mode", ":w"]
-# "}" = "goto_next_paragraph"
-# "{" = "goto_prev_paragraph"
+"{" = ["goto_prev_paragraph"]
+"}" = ["goto_next_paragraph"]
 tab = "extend_parent_node_end"
 S-tab = "extend_parent_node_start"
 "," = "repeat_last_motion"
@@ -139,6 +139,7 @@ D = ["extend_to_line_bounds", "delete_selection", "normal_mode"]
 ret = "@gw"
 
 [keys.insert]
+tab = "move_parent_node_end"
 S-tab = "move_parent_node_start"
 C-a = "insert_at_line_start"
 C-e = "insert_at_line_end"
