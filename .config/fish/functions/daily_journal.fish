@@ -23,7 +23,7 @@ function daily_journal
                 2>/dev/null | sort | tail -n 1
         )
 
-        # Extract unfinished todo items ([ ] ...) from previous entry
+        # Extract unfinished todo items from previous journal entry
         set -l PREV_TODOS
         if test -n "$PREV_ENTRY"
             set -l IN_TODO 0
@@ -44,6 +44,28 @@ function daily_journal
             end
         end
 
+        # Extract backlog items from previous journal entry
+        set -l PREV_BACKLOG
+        if test -n "$PREV_ENTRY"
+            set -l IN_BACKLOG 0
+            for line in (cat "$PREV_ENTRY")
+                if test "$line" = "## Backlog"
+                    set IN_BACKLOG 1
+                    continue
+                end
+                if test $IN_BACKLOG -eq 1
+                    if string match -qr '^##\s' -- "$line"
+                        set IN_BACKLOG 0
+                        continue
+                    end
+                    if string match -qr '^\[ \]\s*-' -- "$line"
+                        set -a PREV_BACKLOG "$line"
+                    end
+                end
+            end
+        end
+
+        # Generate daily journal file
         touch "$FILE_PATH"
         begin
             echo "# $TODAY"
@@ -52,37 +74,31 @@ function daily_journal
             echo
             echo "## TODO:"
             echo
+            echo "## Backlog"
+            echo
+            if test (count $PREV_BACKLOG) -gt 0
+                for t in $PREV_BACKLOG
+                    echo "$t"
+                end
+            end
             if test (count $PREV_TODOS) -gt 0
                 for t in $PREV_TODOS
                     echo "$t"
                 end
-            else
-                echo "[ ] -"
             end
             echo
-            echo "## Aha! Moments"
-            echo
-            echo "## Moments of Inspiration"
-            echo
-            echo "_The rational mind is a servant. The intuitive mind is a sacred gift._"
-            echo
-            echo ---
-            echo
+
+            # Generate weekly report on sundays
+            if test (date +%w) -eq 0
+                echo
+                weekly_report
+                echo
+                echo
+            end
+
             echo "## Journal"
             echo
-            echo "How is it going?"
-            echo
-            echo ---
-            echo
             echo "## Reflection"
-            echo
-            echo "What am I..."
-            echo
-            echo "- grateful for"
-            echo "- proud of"
-            echo "- excited about"
-            echo "- avoiding"
-            echo "- intentions for tomorrow"
             echo
             echo ===
             echo

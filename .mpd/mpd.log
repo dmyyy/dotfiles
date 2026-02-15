@@ -537,3 +537,50 @@
 2026-02-05T11:52:09 player: played "high_school/[Flaming June] Maeda Jun x Yanagi Nagi - Last Smile [Subbed].mp3"
 2026-02-05T11:52:41 player: played "high_school/トレイル - mamenoi【Piano・ピアノ】.mp3"
 2026-02-05T11:55:47 player: played "high_school/Venemy - Rescue Me (feat. Car) [NCS Release].mp3"
+2026-02-05T12:27:57 exception: Failed to open /Users/dmy/.mpd/playlists: No such file or directory
+2026-02-05T12:28:04 exception: Failed to open /Users/dmy/.mpd/playlists: No such file or directory
+2026-02-05T12:28:16 player: played "high_school/Venemy - Rescue Me (feat. Car) [NCS Release].mp3"
+2026-02-05T12:28:16 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-05T12:28:16 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-05T12:28:16 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T12:30:27 exception: Failed to open /Users/dmy/.mpd/playlists: No such file or directory
+2026-02-05T12:30:29 exception: Failed to open /Users/dmy/.mpd/playlists: No such file or directory
+2026-02-05T12:30:34 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-05T12:30:34 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-05T12:30:34 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T12:32:52 exception: Failed to open /Users/dmy/.mpd/playlists: No such file or directory
+2026-02-05T12:35:06 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD1)/02 Piano Phase.m4a"
+2026-02-05T12:35:06 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T12:35:10 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD2)/01 Drumming (Part I).m4a"
+2026-02-05T12:35:10 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-05T12:35:10 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: Detected creation time before 1970, parsing as unix timestamp.
+2026-02-05T12:35:10 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T12:35:12 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD3)/01 Music For Mallet Instruments, Voices And Organ.m4a"
+2026-02-05T12:35:12 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T12:39:54 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T12:40:39 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/01 Music for 18 Musicians - Pulses.m4a"
+2026-02-05T12:43:56 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T12:44:37 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/02 Music for 18 Musicians - Section I.m4a"
+2026-02-05T12:49:07 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T12:49:50 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/03 Music for 18 Musicians - Section II.m4a"
+2026-02-05T12:53:09 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T12:53:45 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/04 Music for 18 Musicians - Section IIIA.m4a"
+2026-02-05T12:56:53 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T12:57:31 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/05 Music for 18 Musicians - Section IIIB.m4a"
+2026-02-05T13:03:24 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T13:04:08 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/06 Music for 18 Musicians - Section IV.m4a"
+2026-02-05T13:10:13 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T13:10:57 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/07 Music for 18 Musicians - Section V.m4a"
+2026-02-05T13:15:07 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T13:15:51 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/08 Music for 18 Musicians - Section VI.m4a"
+2026-02-05T13:19:29 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T13:20:10 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/09 Music for 18 Musicians - Section VII.m4a"
+2026-02-05T13:23:07 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T13:23:45 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/10 Music for 18 Musicians - Section VIII.m4a"
+2026-02-05T13:28:26 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T13:29:09 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/11 Music for 18 Musicians - Section IX.m4a"
+2026-02-05T13:30:22 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T13:30:59 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/12 Music for 18 Musicians - Section X.m4a"
+2026-02-05T13:36:01 ffmpeg/mov,mp4,m4a,3gp,3g2,mj2: stream 0, timescale not set
+2026-02-05T13:36:44 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/13 Music for 18 Musicians - Section XI.m4a"
+2026-02-05T13:42:54 player: played "Steve Reich/Steve Reich_ Works_ 1965-1995 (CD4)/14 Music for 18 Musicians - Pulses.m4a"

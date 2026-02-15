@@ -24,7 +24,7 @@ startup_mode = "Maximized"
 
 [keyboard]
 bindings = [
-  { key = "Escape", mods = "Control", action = "ToggleViMode" },
+  # { key = "Escape", mods = "Control", action = "ToggleViMode" },
   # TODO: didn't do anything when I checked
   # { key = "I", mode = "Vi|~Search", action = "ToggleViMode" },
 ]
