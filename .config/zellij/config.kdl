@@ -454,10 +454,6 @@ show_startup_tips false
 // theme "ansi-highlight"
 theme "ansi-highlight"
 
-// ansi theme with changes focusing on readability and dark/light theme compatability
-//
-// NOTE: no way for text-unselected background to be transparent as of today: https://github.com/zellij-org/zellij/issues/865
-// 
 themes {
     ansi-highlight {
         text_unselected {
@@ -551,7 +547,8 @@ themes {
             emphasis_3 0
         }
         frame_highlight {
-            base 12
+            // base 12
+            base 196
             background 0
             emphasis_0 5
             emphasis_1 9

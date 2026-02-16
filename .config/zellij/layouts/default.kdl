@@ -47,7 +47,8 @@ layout {
                 mode_tmux          "#[fg=green]#[bg=green,fg=0] TMUX#[fg=green] "
                 
                 tab_normal "#[fg=white] ◇  {name} "
-                tab_active "#[fg=159,bold] ◆  {name} "
+                tab_active "#[fg=#ff00ff,bold] ◆  {name} "
+                // tab_active "#[fg=159,bold] ◆  {name} "
             }
         }
         children
@@ -75,7 +76,7 @@ layout {
                 mode_tmux          "#[fg=green]#[bg=green,fg=0] TMUX#[fg=green] "
 
                 tab_normal "#[fg=white] ◇  {name} "
-                tab_active "#[fg=159,bold] ◆  {name} "
+                tab_active "#[fg=#ff00ff,bold] ◆  {name} "
             }
         }
         pane {
