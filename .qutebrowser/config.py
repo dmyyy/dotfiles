@@ -66,15 +66,24 @@ config.bind('<Ctrl-i>', 'forward')
 config.unbind('L', mode='normal')
 config.bind('<Alt-i>', 'tab-move +')
 config.bind('<Alt-o>', 'tab-move -')
-config.bind(',r', 'config-source')
 config.bind('gn', 'open -t')
-config.bind('th', 'config-cycle tabs.show multiple never')
+config.bind('<Space>,r', 'config-source')
+config.bind('<Space>e', 'config-cycle tabs.show multiple never')
 config.bind('sh', 'config-cycle statusbar.show always never')
+config.bind("cm", "clear-messages") 
+
+# control video speed
+config.bind("<Up>",     "jseval document.querySelector('video').playbackRate += 0.25;") 
+config.bind("<Down>",   "jseval document.querySelector('video').playbackRate -= 0.25;") 
+
+# search for the current URL in archive.org's wayback machine
+config.bind(",w", "open http://web.archive.org/{url}")
 
 # caret
 config.bind('gl', 'move-to-end-of-line', mode='caret')
 config.bind('gh', 'move-to-start-of-line', mode='caret')
 config.bind('ge', 'move-to-end-of-document', mode='caret')
+
 
 # todo: do i need this
 config.bind('=', 'cmd-set-text -s :open')
