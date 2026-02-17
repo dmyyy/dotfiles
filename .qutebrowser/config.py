@@ -9,15 +9,32 @@ config = config  # noqa: F821 pylint: disable=E0602,C0103
 
 config.load_autoconfig(False) # don't load from gui
 
+# Fix 'TrustedHTML' error
+c.content.javascript.log_message.excludes = {
+    "userscript:_qute_stylesheet": [
+        "*Refused to apply inline style because it violates the following Content Security Policy directive: *"
+    ],
+    "userscript:_qute_js": ["*TrustedHTML*"],
+}
+
 # --------------------------------theme--------------------------------
-# catpuccin as base with some manual tweaks
+# catpuccin as reasonable base
 catppuccin.setup(c, 'mocha', True)# pylint: disable=C0111
 
+# manual tweaks
 c.colors.tabs.even.bg = "#26233a"
 c.colors.tabs.odd.bg = "#26233a"
 c.colors.tabs.selected.even.bg = "#6e6a86"
 c.colors.tabs.selected.odd.bg = "#6e6a86"
+c.colors.statusbar.insert.bg = "#6e6a86"
+c.colors.statusbar.caret.bg = "#6e6a86"
+
+c.window.hide_decoration = True
+
 c.tabs.title.format = "{audio}{current_title}"
+c.tabs.show = "multiple"
+c.tabs.width = '25%'
+c.tabs.position = "left"
 
 c.content.autoplay = False
 
@@ -29,12 +46,6 @@ c.content.autoplay = False
 # 
 c.url.default_page = 'https://web.tabliss.io/'
 c.url.start_pages = ['https://web.tabliss.io/']
-
-c.tabs.show = "multiple"
-c.tabs.width = '25%'
-c.tabs.position = "left"
-
-c.window.hide_decoration = True
 
 c.keyhint.delay = 0
 
@@ -52,6 +63,31 @@ c.url.searchengines = {
 c.completion.open_categories = ['searchengines', 'quickmarks', 'bookmarks', 'history', 'filesystem']
 
 c.auto_save.session = True # save tabs on quit/restart
+
+# Look here for more inspiration
+# https://codeberg.org/Frestein/dotfiles/src/commit/a4a92e2b8a582509f4ff1552b1d296512eb331e8/dot_config/private_qutebrowser/config.py.tmpl#L83 
+
+c.editor.command = [
+    "alacritty",
+    "hx",
+    "{file}",
+    "+{line}",
+]
+
+# use yazi for file selection
+c.fileselect.handler = "external"
+yazi_chooser = [
+    "alacritty",
+    "--",
+    "--title",
+    "yazi-flt",
+    "yazi",
+    "--chooser-file",
+    "{}",
+]
+c.fileselect.single_file.command = yazi_chooser
+c.fileselect.multiple_files.command = yazi_chooser
+c.fileselect.folder.command = yazi_chooser
 
 # --------------------keys--------------------
 # normal

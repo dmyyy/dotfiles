@@ -26,7 +26,7 @@
 !.config/zellij
 
 # Music
-!.mpd/
+!.mpd/mpd.conf
 !.config/rmpc
 
 # qutebrowser
